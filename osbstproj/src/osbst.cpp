@@ -162,7 +162,6 @@ int OSBST::sizeofNode(OSBST::Node* node)
 	if (node == nullptr)
 	{
 		return 0;
-	}
-
+	}//
 	return (node->left == nullptr ? 0 : node->left->size) + (node->right == nullptr ? 0 : node->right->size) + 1;
 }
